@@ -1,0 +1,48 @@
+package uni.fmi;
+
+public class HW_Week2_Task3 {
+    public static void main(String[] args) {
+
+        int floorNumber = 9;
+        String floorName;
+
+        switch (floorNumber) {
+            case 1:
+                floorName = "Eight floor";
+                break;
+
+            case 2:
+                floorName = "Seventh floor";
+                break;
+            case 3:
+                floorName = "Sixth floor";
+                break;
+
+            case 4:
+                floorName = "Fifth floor";
+                break;
+
+            case 5:
+                floorName = "Fourth floor";
+                break;
+
+            case 6:
+                floorName = "Third floor";
+                break;
+
+            case 7:
+                floorName = "Second floor";
+                break;
+
+            case 8:
+                floorName = "First floor";
+                break;
+
+            case 9:
+                floorName = "Zero floor";
+                break;
+
+        }
+        System.out.println("Hello");
+    }
+}
