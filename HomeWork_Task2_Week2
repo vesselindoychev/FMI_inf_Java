@@ -1,0 +1,51 @@
+package uni.fmi;
+
+import java.util.Scanner;
+
+public class HW_Week2_Task2 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String monthName = scan.nextLine();
+        if (monthName.equals("January")) {
+            System.out.println(31);
+
+        }else if (monthName.equals("February")) {
+            System.out.println(29);
+
+        }else if (monthName.equals("March")) {
+            System.out.println(31);
+
+        }else if (monthName.equals("April")) {
+            System.out.println(30);
+
+        }else if (monthName.equals("May")) {
+            System.out.println(31);
+
+        }else if (monthName.equals("June")) {
+            System.out.println(30);
+
+        }else if (monthName.equals("July")) {
+            System.out.println(31);
+
+        }else if (monthName.equals("August")) {
+            System.out.println(31);
+
+        }else if (monthName.equals("September")) {
+            System.out.println(30);
+
+        }else if (monthName.equals("October")) {
+            System.out.println(31);
+
+        }else if (monthName.equals("November")) {
+            System.out.println(30);
+
+        }else if (monthName.equals("December")) {
+            System.out.println(31);
+
+
+        }
+    }
+}
+
+
+
