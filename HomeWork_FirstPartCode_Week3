@@ -1,0 +1,21 @@
+package uni.fmi;
+
+import java.util.Scanner;
+
+public class HW_Task1_Week3 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String objectName = scan.nextLine();
+
+        if (objectName.equals("Wall")){
+            System.out.println("Go Sideway");
+
+        }else if (objectName.equals("Chair")){
+            System.out.println("Jump");
+
+        }else if (objectName.equals("Nothing")){
+            System.out.println("Forward");
+        }
+
+    }
+}
