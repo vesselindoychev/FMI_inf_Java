@@ -1,0 +1,69 @@
+public class Chess {
+    public static String[][] Chess;
+
+    public static void makeChessGame() {
+        Chess = new String[][]{
+                        {"whiteDwarf", "whiteDonkey", "whiteQueen", "whiteKing", "whiteMachineGun", "whiteDwarfTwo"},
+                        {"==", "==", "==", "==", "==", "==",},
+                        {"==", "==", "==", "==", "==", "==",},
+                        {"==", "==", "==", "==", "==", "==",},
+                        {"==", "==", "==", "==", "==", "==",},
+                        {"blackDwarf", "blackMachineGun", "blackKing", "blackQueen", "blackDonkey", "blackDwarfTwo"}
+                };;
+    }
+}
+public class Play extends Chess {
+
+    private boolean chessIniliatize;
+
+    public static void main(String[] args) {
+
+    }
+    public static void createChessGame() {
+        boolean chessIniliatize;
+        chessIniliatize = true;
+    }
+
+    public void moveBlackDwarf(String column, String row)
+    {
+        if(chessIniliatize) {
+            switch (column) {
+                case "A":
+                    switch (row) {
+                        case "E":
+                            if (Chess[4][0] == "==") {
+                                Chess[4][0] = "blackDwarf";
+                            } else {
+                                System.out.println("Мястото е заето");
+                            }
+                        case "D":
+                            if (Chess[3][0] == "==") {
+                                Chess[3][0] = "blackDwarf";
+                            } else {
+                                System.out.println("Мястото е заето");
+                            }
+                        case "C":
+                            if (Chess[2][0] == "==") {
+                                Chess[2][0] = "blackDwarf";
+                            } else {
+                                System.out.println("Мястото е заето");
+                            }
+                        case "B":
+                            if (Chess[4][0] == "==") {
+                                Chess[4][0] = "blackDwarf";
+                            } else {
+                                System.out.println("Мястото е заето");
+                            }
+                        default:
+                            System.out.println("Невалиден ред");
+                    }
+                default:
+                    System.out.println("Черното джудже върви само на колона А");
+
+            }
+        } else {
+            System.out.println("Играта не е започнала! Започнете играта първо.");
+        }
+    }
+}
+
